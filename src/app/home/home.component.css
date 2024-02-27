@@ -1,0 +1,117 @@
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 200px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 180px;
+}
+
+.sub-menu {
+    background: azure;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info p {
+    font-weight: 250;
+    font-size: 10px;
+}
+
+.user-info img {
+    width: 35px;
+    border-radius: 40%;
+    margin-right: 13px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 7px 0 7px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/* .sub-menu-link h4{
+    width: 100%;
+    color: black;
+  } */
+
+.sub-menu-link p {
+    width: 100%;
+    display: inline;
+    color: black;
+    font-size: 12px;
+}
+
+.sub-menu-link img {
+    width: 35px;
+    background: #cccccc;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span {
+    font-size: 20px;
+    color: black;
+    margin-left: 90px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.theme-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.seed-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_footer a{
+    color: rgb(223, 133, 148);
+}
+
+.navbar .navbar-brand{
+    color: rgb(223, 133, 148);
+}
