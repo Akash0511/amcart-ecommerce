@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit {
   redirectToLoginSignup(): void {
     // Redirect to Cognito hosted UI login/signup page
     // https://nagp-ecommerce.auth.us-east-1.amazoncognito.com
-    window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=https://delightful-moss-068eae30f.4.azurestaticapps.net';
+    window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=https://d3padlje9p8wi2.cloudfront.net/';
     // Make sure to replace 'your-cognito-domain', 'your-client-id', and 'http://localhost:4200' with your actual Cognito configuration.
   }
 
@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit {
     if (isLoggedIn == null) {
       // User is not logged in, redirect to login/signup page
       // this.router.navigate(['/']);
-      window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=https://delightful-moss-068eae30f.4.azurestaticapps.net';
+      window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=https://d3padlje9p8wi2.cloudfront.net/';
     }
     else{
       this.cartService.addToCart(product).subscribe((data: any) => {
