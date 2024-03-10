@@ -115,6 +115,18 @@ export class ProductsComponent implements OnInit {
     );
   }
 
+  searchByCategory(category: string): void {
+    console.log('searchByCategory called')
+
+    this.productService.getSearchedProducts(category).subscribe(
+      (data: any) => {
+        const body = JSON.parse(data['body']);
+        this.searched_products = body;
+        console.log('search_products retrieved: ', this.searched_products)
+      }
+    );
+  }
+
   addToCart(product: Product) {
     var message = ''
     const isLoggedIn = localStorage.getItem('accessToken');
