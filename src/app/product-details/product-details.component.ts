@@ -91,7 +91,7 @@ export class ProductDetailsComponent implements OnInit {
     console.log('login called')
     // Redirect to Cognito hosted UI login/signup page
     // https://nagp-ecommerce.auth.us-east-1.amazoncognito.com
-    window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=http://localhost:4200/';
+    window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=https://d3padlje9p8wi2.cloudfront.net/';
     // Make sure to replace 'your-cognito-domain', 'your-client-id', and 'http://localhost:4200' with your actual Cognito configuration.
   }
 

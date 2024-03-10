@@ -15,7 +15,7 @@ export class AuthGuardService implements CanActivate {
     if (!isLoggedIn) {
       // User is not logged in, redirect to login/signup page
       // this.router.navigate(['/']);
-      window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=http://localhost:4200/';
+      window.location.href = 'https://nagp-ecommerce-2.auth.us-east-1.amazoncognito.com/login?client_id=6m0q9soq1mnf97t73e7r78liha&response_type=token&redirect_uri=https://d3padlje9p8wi2.cloudfront.net/';
       return false;
     }
     return true;
